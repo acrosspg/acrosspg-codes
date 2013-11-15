@@ -1,5 +1,3 @@
-<script type="text/javascript">
-//store the quotations in arrays
 var images = [], 
 index = 0;
 
@@ -11,5 +9,3 @@ images[4] = "<a href = 'http://www.flipkart.com/sure-success-magic-7th/p/itmdq46
 
 index = Math.floor(Math.random() * images.length);
 document.write(images[index]);
-//done
-</script>
