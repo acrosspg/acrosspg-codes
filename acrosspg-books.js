@@ -7,6 +7,10 @@ images[2] = "<a href = 'http://www.flipkart.com/comprehensive-guide-combined-med
 images[3] = "<a href = 'http://www.flipkart.com/dnb-cet-review-primary-post-diploma-2013-supplement-1st/p/itmdqd7arbhw6qux?pid=9788189477202&affid=acrosspgya' target='_blank'><img src='https://lh4.googleusercontent.com/s5gLD3gZMWd7IdVaOJdcGRGZeIg9H3KZ0yof5Y1-EJg=w300-h250-no' alt='DNB CET Review 2013 Supplement'></a>";
 images[4] = "<a href = 'http://www.flipkart.com/sure-success-magic-7th/p/itmdq4677xzksya5?pid=9789351520009&&affid=acrosspgya' target='_blank'><img src='https://lh5.googleusercontent.com/-qr-8BSmpVCE/UoTOhctYQYI/AAAAAAAABCw/HcSl1UnrY8Y/w300-h250-no/sure+success+magic+7ed.jpg' alt='Sure Success Magic'></a>";
 images[5] = "<iframe src='http://www.flipkart.com/affiliate/displayWidget?affrid=WRID-138454324291031221' frameborder=0 height=250 width=300></iframe>";
+images[6] = "<iframe src='http://www.flipkart.com/affiliate/displayWidget?affrid=WRID-137382214809764248' frameborder=0 height=250 width=300></iframe>";
+images[7] = "<iframe src='http://www.flipkart.com/affiliate/displayWidget?affrid=WRID-138687340090047458' frameborder=0 height=250 width=300></iframe>";
+images[8] = "<iframe src='http://www.flipkart.com/affiliate/displayWidget?affrid=WRID-138687398155682368' frameborder=0 height=160 width=780></iframe>";
+
 
 index = Math.floor(Math.random() * images.length);
 document.write(images[index]);
