@@ -9,9 +9,8 @@ images[4] = "<a href = 'http://www.flipkart.com/sure-success-magic-7th/p/itmdq46
 images[5] = "<iframe src='http://www.flipkart.com/affiliate/displayWidget?affrid=WRID-138454324291031221' frameborder=0 height=250 width=300></iframe>";
 images[6] = "<iframe src='http://www.flipkart.com/affiliate/displayWidget?affrid=WRID-137382214809764248' frameborder=0 height=250 width=300></iframe>";
 images[7] = "<iframe src='http://www.flipkart.com/affiliate/displayWidget?affrid=WRID-138687340090047458' frameborder=0 height=250 width=300></iframe>";
-images[8] = "<iframe src='http://www.flipkart.com/affiliate/displayWidget?affrid=WRID-138687398155682368' frameborder=0 height=100 width=630></iframe>";
-images[9] = "<iframe src='http://www.flipkart.com/affiliate/displayWidget?affrid=WRID-137388704079714760' frameborder=0 height=250 width=300></iframe>";
-images[10] = "<iframe src='http://www.flipkart.com/affiliate/displayWidget?affrid=WRID-138912228293733993' frameborder=0 height=250 width=300></iframe>";
+images[8] = "<iframe src='http://www.flipkart.com/affiliate/displayWidget?affrid=WRID-137388704079714760' frameborder=0 height=250 width=300></iframe>";
+images[9] = "<iframe src='http://www.flipkart.com/affiliate/displayWidget?affrid=WRID-138912228293733993' frameborder=0 height=250 width=300></iframe>";
 
 index = Math.floor(Math.random() * images.length);
 document.write(images[index]);
