@@ -26,7 +26,7 @@ function showrecentpostswiththumbs(json) {
             d = s.substr(b + 5, c - b - 5);
             if ((a != -1) && (b != -1) && (c != -1) && (d != "")) {
                 thumburl = d;
-            } else thumburl = 'https://lh3.googleusercontent.com/-8zGAIhj3eo4/Usv3-9ng-pI/AAAAAAAABMg/5j6SSw82ICw/s104/acrosspg%2520logo%2520mail.png';
+            } else thumburl = 'http://www.webaholic.co.in/other/no-image.jpg';
         }
         var postdate = entry.published.$t;
         var cdyear = postdate.substring(0, 4);
@@ -45,7 +45,7 @@ function showrecentpostswiththumbs(json) {
         monthnames[10] = "Oct";
         monthnames[11] = "Nov";
         monthnames[12] = "Dec";
-        document.write('<li class="across-recent">');
+        document.write('<li class="clearfix">');
         if (showpostthumbnails == true)
             document.write('<img class="recent_thumb" src="' + thumburl + '"/>');
         document.write('<b><a href="' + posturl + '" target ="_blank">' + posttitle + '</a></b><br>');
@@ -84,7 +84,7 @@ function showrecentpostswiththumbs(json) {
             }
             if (commenttext == '1 Comments') commenttext = '1 Comment';
             if (commenttext == '0 Comments') commenttext = 'No Comments';
-            commenttext = '<a href="' + commenturl + '" target ="_top">' + commenttext + '</a>';
+            commenttext = '<a href="' + commenturl + '" target ="_blank">' + commenttext + '</a>';
             towrite = towrite + commenttext;
             flag = 1;;
         }
@@ -97,7 +97,7 @@ function showrecentpostswiththumbs(json) {
         document.write('</strong></li>');
         if (displayseparator == true)
             if (i != (numposts - 1))
-                document.write('<hr id='across-recent'>');
+                document.write('<hr>');
     }
     document.write('</ul>');
 }
