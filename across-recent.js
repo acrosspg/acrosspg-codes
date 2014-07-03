@@ -26,7 +26,7 @@ function showrecentpostswiththumbs(json) {
             d = s.substr(b + 5, c - b - 5);
             if ((a != -1) && (b != -1) && (c != -1) && (d != "")) {
                 thumburl = d;
-            } else thumburl = 'http://www.webaholic.co.in/other/no-image.jpg';
+            } else thumburl = 'https://lh3.googleusercontent.com/-8zGAIhj3eo4/Usv3-9ng-pI/AAAAAAAABMg/5j6SSw82ICw/s104/acrosspg%2520logo%2520mail.png';
         }
         var postdate = entry.published.$t;
         var cdyear = postdate.substring(0, 4);
@@ -48,7 +48,7 @@ function showrecentpostswiththumbs(json) {
         document.write('<li class="clearfix">');
         if (showpostthumbnails == true)
             document.write('<img class="recent_thumb" src="' + thumburl + '"/>');
-        document.write('<b><a href="' + posturl + '" target ="_blank">' + posttitle + '</a></b><br>');
+        document.write('<b><a href="' + posturl + '" target ="_top">' + posttitle + '</a></b><br>');
         if ("content" in entry) {
             var postcontent = entry.content.$t;
         } else
@@ -84,13 +84,13 @@ function showrecentpostswiththumbs(json) {
             }
             if (commenttext == '1 Comments') commenttext = '1 Comment';
             if (commenttext == '0 Comments') commenttext = 'No Comments';
-            commenttext = '<a href="' + commenturl + '" target ="_blank">' + commenttext + '</a>';
+            commenttext = '<a href="' + commenturl + '" target ="_top">' + commenttext + '</a>';
             towrite = towrite + commenttext;
             flag = 1;;
         }
         if (displaymore == true) {
             if (flag == 1) towrite = towrite + ' | ';
-            towrite = towrite + '<a href="' + posturl + '" class="url" target ="_blank">More -></a>';
+            towrite = towrite + '<a href="' + posturl + '" class="url" target ="_top">More -></a>';
             flag = 1;;
         }
         document.write(towrite);
