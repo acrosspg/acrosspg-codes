@@ -48,7 +48,7 @@ function showrecentpostswiththumbs(json) {
         document.write('<li class="clearfix">');
         if (showpostthumbnails == true)
             document.write('<img class="recent_thumb" src="' + thumburl + '"/>');
-        document.write('<b><a href="' + posturl + '" target ="_top">' + posttitle + '</a></b><br>');
+        document.write('<b><a href="' + posturl + '" target ="_blank">' + posttitle + '</a></b><br>');
         if ("content" in entry) {
             var postcontent = entry.content.$t;
         } else
@@ -84,20 +84,20 @@ function showrecentpostswiththumbs(json) {
             }
             if (commenttext == '1 Comments') commenttext = '1 Comment';
             if (commenttext == '0 Comments') commenttext = 'No Comments';
-            commenttext = '<a href="' + commenturl + '" target ="_top">' + commenttext + '</a>';
+            commenttext = '<a href="' + commenturl + '" target ="_blank">' + commenttext + '</a>';
             towrite = towrite + commenttext;
             flag = 1;;
         }
         if (displaymore == true) {
             if (flag == 1) towrite = towrite + ' | ';
-            towrite = towrite + '<a href="' + posturl + '" class="url" target ="_top">More -></a>';
+            towrite = towrite + '<a href="' + posturl + '" class="url" target ="_blank">More -></a>';
             flag = 1;;
         }
         document.write(towrite);
         document.write('</strong></li>');
         if (displayseparator == true)
             if (i != (numposts - 1))
-                document.write('<hr>');
+                document.write('<hr class="axrecent">');
     }
     document.write('</ul>');
 }
